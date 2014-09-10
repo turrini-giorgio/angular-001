@@ -1,0 +1,211 @@
+/* Un pò di stili per gli errori */
+input.ng-invalid {
+    background-color: #ffc0c0;
+    border: solid 1px red !important;
+}
+
+input.ng-invalid:focus {
+    background-color: #ffc0c0;
+    border: solid 1px red !important;
+    -webkit-box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.6);
+}
+
+select.ng-invalid {
+    background-color: #ffc0c0;
+    border: solid 1px red !important;
+}
+
+select.ng-invalid:focus {
+    background-color: #ffc0c0;
+    border: solid 1px red !important;
+    -webkit-box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.6);
+    box-shadow: 0 0 4px 1px rgba(255, 0, 0, 0.6);
+}
+
+form.ng-invalid {
+    border: none;
+}
+
+/* Customizzazioni per visualizzare i campi che debbono essere riempiti (obbligatori) - SELECT (2) */
+
+.select2-container .select2-choice {
+    background-image: none;
+    height: 28px;
+    border-radius: 2px;
+    line-height: 28px;
+}
+
+div.select2-container.ng-invalid,
+div.select2-container.ng-invalid a.select2-choice {
+    background-color: #ffc0c0;
+    border-color: red;
+}
+/* classi per i selettori di ufficio */
+.s2-prod {
+    border-left: 5px solid #00ff00;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+.s2-alfa {
+    border-left: 5px solid #ff0000;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.s2-budg {
+    border-left: 5px solid #ffff00;
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+/* stili per i pulsantoni nella home*/
+.menu-box {
+	width: 150px;
+	height: 150px;
+	line-height: 24px;
+	padding-top: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	margin: 5px;
+	font-family: Segoe UI;
+	font-size: 15px;
+	font-weight: 500;
+	position: relative;
+}
+.menu-box:hover,
+.menu-box-x:hover {
+	font-style: italic;
+    color:white
+}
+.c-light-green {
+	background-color: #99b433;
+	color: white !important;
+}
+.c-green {
+	background-color: #00a300;
+	color: white;
+}
+.c-green-g {
+	background-color: #8ce18c;
+	color: white;
+}
+.c-dark-green {
+	background-color: #1e7145;
+	color: white;
+}
+.c-magenta {
+	background-color: #ff0097;
+	color: white;
+}
+.c-light-purple {
+	background-color: #9f00a7;
+	color: white;
+}
+.c-purple {
+	background-color: #7e3878;
+	color: white;
+}
+.c-dark-purple {
+	background-color: #603cba;
+	color: white;
+}
+.c-darken {
+	background-color: #1d1d1d;
+	color: white;
+}
+.c-teal {
+	background-color: #00aba9;
+	color: white;
+}
+.c-dark-blue {
+	background-color: #2b5797;
+	color: white;
+}
+.c-blue {
+	background-color: #2d89ef;
+	color: white;
+}
+.c-blue-g {
+	background-color: #68aaf3;
+	color: white;
+}
+.c-teal-g {
+	background-color: #16c881;
+	color: white;
+}
+.c-yellow {
+	background-color: #ffc40d;
+	color: white;
+}
+.c-light-red {
+	background-color: #ee1111;
+	color: white;
+}
+.c-light-red-g {
+	background-color: #fc5454;
+	color: white;
+}
+.c-violet {
+	background-color: #d78de2;
+	color: white;
+}
+.c-dark-orange {
+	background-color: #f58565;
+	color: white;
+}
+
+/*bottoni che visualizzano/nascondono regioni della pagina*/
+.c-button-open-close {
+    background-color:#7e3878;
+    color:white;
+    height:20px;
+    border:none;
+    border-top:solid 1px white;
+}
+
+.c-purple-inv {
+	background-color:  white;
+	color: #7e3878;
+}
+
+.c-violet2 {
+	background-color: #d78de2;
+	color: #1d1d1d;
+}
+
+.c-blue-g2 {
+	background-color: #68aaf3;
+	color: #1d1d1d;
+}
+
+.c-blue-g3 {
+	background-color: #fcfdfe;
+	color: #1d1d1d;
+}
+
+.progress {
+    height: 16px;
+}
+
+.progress-bar {
+    line-height: 16px;
+    font-size: 13px;
+    padding: 0px;
+}
+
+.progress-bar-success {
+    background-color: red;
+}
+
+a.navbar-brand,
+.navbar-nav li a {
+	color: white;
+}
+
+.navbar-nav li a:hover {
+	color: #2b5797;
+	background-color: #8bB7E7;
+}
+
+.navbar-nav li.active {
+	color: white;
+	background-color: #4b77b7;
+}

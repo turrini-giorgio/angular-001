@@ -1,0 +1,51 @@
+<h1>Validate</h1>
+
+<form name="myform" class="form-horizontal" novalidate>
+	<div class="form-group">
+		<label for="eta" class="col-sm-2">Nome</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="nome" ng-model="rec.nome" ng-minlength="4" ng-maxlength="8" sx-validate="validator">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="cognome" class="col-sm-2">Cognome</label>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="cognome" ng-model="rec.cognome" ng-minlength="4" ng-maxlength="8" ng-change="checkCognome(myform.cognome)" required sx-validate="validator">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="eta" class="col-sm-2">Età</label>
+		<div class="col-sm-6">
+			<input type="number" min="16" max="80" class="form-control" name="eta" ng-model="rec.eta" sx-validate="validator">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="eta" class="col-sm-2">Sesso</label>
+		<div class="col-sm-6">
+			<select class="form-control" name="sesso" ng-model="rec.sesso" sx-validate="validator" sx-error-tag='sex'>
+				<option value="M">Maschio</option>
+				<option value="F">Femmina</option>
+			</select>
+		</div>
+	</div>
+
+<p></p>
+<hr>
+<h2>Riepilogo</h2>
+
+<dl class="dl-horizontal">
+	<dt>Nome</dt>
+	<dd>{{rec.nome}}</dd>
+	<dt>Cognome</dt>
+	<dd>{{rec.cognome}}</dd>
+	<dt>Età</dt>
+	<dd>{{rec.eta}}</dd>
+	<dt>Sesso</dt>
+	<dd>{{rec.sesso}}</dd>
+</dl>
+<p></p>
+<hr>
+
+<sx-error-report error-definition="errorMessages"/>
+
+</form>

@@ -1,0 +1,35 @@
+<style>
+	.center-me {
+		margin: 0 auto;
+	}
+	.wid-200 {
+		width: 200px;
+	}
+	.pad-20 {
+		padding: 20px 0;
+	}
+	.parent {
+		position: relative;
+	}
+
+	.child {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+</style>
+
+<h1>Center</h1>
+
+
+<div class="center-me wid-200 text-center c-purple pad-20">
+	<p>La donzelletta<br/>vien dalla campagna</p>
+</div>
+
+<div class="parent center-me wid-200">
+	<div class="pad-20 child c-purple text-center">
+		<p>Viva la bella vita</p>
+	</div>
+</div>
+
+

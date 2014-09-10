@@ -1,0 +1,26 @@
+<style type="text/css">
+	h2.error-report {
+		font-family: Segoe UI;
+		font-size: 32px;
+		font-weight: 100;
+		padding: 5px 0 8px 20px;
+		border: solid 1px #c0c0c0;
+	}
+	form.ng-invalid h2.error-report {
+		background-color: #ffa0a0;
+		color: white;
+	}
+</style>
+
+<div ng-show="errors.length > 0">
+	<h2 class="error-report" ng-bind="title"></h2>
+
+	<div class="row">
+		<dl class="dl-horizontal">
+			<dt ng-repeat-start="err in errors">{{err.name}}</dt>
+			<dd ng-repeat-end>
+				<div ng-repeat="e in err.errors"><a href="#" ng-click="gotoField(err,$event)" ng-bind-html="translate(err.name, e)"></a></div>
+			</dd>
+		</dl>
+	</div>
+</div>

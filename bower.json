@@ -1,0 +1,49 @@
+{
+  "name": "angular-001",
+  "version": "0.1.0",
+  "authors": [
+    "@anthor@"
+  ],
+  "description": "Prove di AngularUI",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "prove",
+    "angularjs"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "angular": "~1.2.22",
+    "angular-ui-router": "~0.2.10",
+    "angular-cookie": "~4.0.2",
+    "angular-resource": "~1.2.22",
+    "angular-animate": "~1.2.22",
+    "angular-sanitize": "~1.2.22",
+    "angular-strap": "~2.0.5",
+    "angular-motion": "~0.3.3",
+    "select2": "~3.5.1",
+    "angular-ui-select2": "~0.0.5",
+    "jquery": "~2.1.1",
+    "angular-i18n": "~1.2.22",
+    "bootstrap-additions": "~0.2.3",
+    "fontawesome": "~4.1.0"
+  },
+  "resolutions": {
+    "select2": "~3.5.1"
+  }
+}
