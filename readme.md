@@ -1,18 +1,21 @@
-# Installazione
+# Installation
 
-Eseguire:
+Execute:
 
 ```
 npm install
 ```
 
-e
+and
 
 ```
 bower install
 ```
 
-alla fine eseguire:
+# Execution
+
+Using grunt:
+
 
 ```
 grunt
