@@ -41,7 +41,9 @@
     "jquery": "~2.1.1",
     "angular-i18n": "~1.2.22",
     "bootstrap-additions": "~0.2.3",
-    "fontawesome": "~4.1.0"
+    "fontawesome": "~4.1.0",
+    "angular-ui-tinymce": "~0.0.5",
+    "tinymce": "~4.1.5"
   },
   "resolutions": {
     "select2": "~3.5.1"

@@ -8,6 +8,7 @@
 		'ngLocale',
 		'ui.router', 
 		'ui.select2',
+		'ui.tinymce',
 	]);
 
 	app.config(['$stateProvider', '$urlRouterProvider', 
@@ -28,6 +29,11 @@
         	url: '/cen',
 			templateUrl: 'app/views/center.html',
 			controller: 'CenterCtrl',
+        })
+        .state('tmce', {
+        	url: '/tmce',
+			templateUrl: 'app/views/tmce.html',
+			controller: 'TmceCtrl',
         })
         ;
 	}])
