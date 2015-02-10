@@ -20,6 +20,16 @@
 			templateUrl: 'app/views/main.html',
 			controller: 'MainCtrl',
         })
+        .state('live', {
+        	url: '/live',
+			templateUrl: 'app/views/live.html',
+			controller: 'LiveCtrl',
+        })
+        .state('sp', {
+        	url: '/sp',
+			templateUrl: 'app/views/spview.html',
+			controller: 'SpviewCtrl',
+        })
         .state('validate', {
         	url: '/val',
 			templateUrl: 'app/views/validate.html',

@@ -27,7 +27,7 @@ module.exports = function (grunt) {
                 tasks: []
             },
             css: {
-                files: ['app/css/*.css'],
+                files: ['app/css/*.css', 'app/css/sp/*.css'],
                 tasks: []
             }
         },
