@@ -1,0 +1,785 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" lang="it-IT">
+    
+    <head>
+    	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+    	<meta name="GENERATOR" content="Microsoft SharePoint" />
+    	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    	<meta http-equiv="Expires" content="0" />
+    	<meta name="msapplication-TileImage" content="/_layouts/15/images/SharePointMetroAppTile.png" />
+    	<meta name="msapplication-TileColor" content="#0072C6" />
+    	<title>Adempimento - Servizi Paghe</title>
+    	<link rel="stylesheet" type="text/css" href="app/css/sp/corev15.css"/>
+        <link rel="shortcut icon" href="app/css/sp/favicon.ico" type="image/vnd.microsoft.icon" id="favicon" />
+        <link href="app/css/sp/Sixtema.css" rel="stylesheet" />
+        <link href="app/css/sp/mmsix_New.css" rel="stylesheet" />
+    </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();">
+    	<form method="post" action="Servizi Paghe.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+        <div id="imgPrefetch" style="display:none">
+			<img src="app/css/sp/spcommon.png?rev=23" />
+			<img src="app/css/sp/favicon.ico?rev=23" />
+			<img src="app/css/sp/spcommon.png?rev=23" />
+			<img src="app/css/sp/Sixtema.png?rev=23" />
+		</div>
+        <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+            <a id="linkTurnOnAcc" href="#" class="ms-TurnOnAcc" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                Attiva modalità di accessibilità
+            </a>
+        </div>
+        <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+            <a id="linkTurnOffAcc" href="#" class="ms-TurnOffAcc" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                Disattiva modalità di accessibilità
+            </a>
+        </div>
+        <div class="s4-notdlg s4-skipribbonshortcut noindex">
+            <a href="javascript:;" onclick="document.getElementById(&#39;startNavigation&#39;).focus();" class="ms-SkiptoNavigation" accesskey="Y">
+                Ignora comandi barra multifunzione
+            </a>
+        </div>
+        <div class="s4-notdlg noindex">
+            <a href="javascript:;" onclick="document.getElementById(&#39;mainContent&#39;).focus();" class="ms-SkiptoMainContent" accesskey="X">
+                Torna a contenuto principale
+            </a>
+        </div>
+        <div id="TurnOffAnimation" style="display:none;" class="s4-notdlg noindex">
+            <a id="linkTurnOffAnimation" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">
+                Disattiva animazioni
+            </a>
+        </div>
+        <div id="TurnOnAnimation" style="display:none;" class="s4-notdlg noindex">
+            <a id="linkTurnOnAnimation" href="#" class="ms-accessible ms-acc-button" onclick="ToggleAnimationStatus();return false;">
+                Attiva animazioni
+            </a>
+        </div>
+        <a id="HiddenAnchor" href="javascript:;" style="display:none;">
+        </a>
+        <div id="ms-hcTest">
+        </div>
+        <!-- MegaMenu -->
+        <div id="MMContainer" class="s4-notdlg">
+			<span class="MM_container"><div id="menu" class="MM_container">
+	<ul class="MM_Main">
+		<li class="MM_header MM_single"><a href="/" title="Home">Home</a></li><li class="MM_header"><div class='mm-l0' data-title='Servizi'><a href='/serv/SitePages/Pagina iniziale.aspx'>Servizi</a></div><ul style="width: 555px;">
+			<li><div class='mm-l1'><a href='/serv/sade'>Adempimento</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sade/SitePages/Servizi Fiscale.aspx'>Fiscale</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sade/SitePages/Servizi Paghe.aspx'>Paghe</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sade/SitePages/Servizi Affari Generali.aspx'>Affari Generali</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sade/SitePages/Servizi Comuni.aspx'>Servizi Comuni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sade/SitePages/Servizi CRM.aspx'>CRM</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/serv/sass'>Associativi</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sass/SitePages/Elenco Attività.aspx'>Attività</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sass/Documenti condivisi/Forms/AllItems.aspx'>Documentazione</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sass/Lists/Stampe Associativi'>Stampe Associativi</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/sass/Lists/Discussione team'>Forum</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/serv/stec'>Tecnologici</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/stec/SitePages/Elenco Attività.aspx'>Attività</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/serv/stec/Documenti condivisi'>Documentazione</a></div></li>
+			</ul></li>
+		</ul></li><li class="MM_header"><div class='mm-l0' data-title='Conoscenza'><a href='/know/SitePages/Pagina iniziale.aspx'>Conoscenza</a></div><ul style="width: 555px;">
+			<li><div class='mm-l1'><a href='/know/associativi'>Associativi</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali'>Manuali</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Vicenza'>Manuali - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Rovigo'>Manuali - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Rimini'>Manuali - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Reggio Emilia'>Manuali - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Ravenna'>Manuali - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Piacenza'>Manuali - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Parma'>Manuali - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Modena'>Manuali - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Mantova'>Manuali - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Macerata'>Manuali - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Imola'>Manuali - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Forl'>Manuali - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Ferrara'>Manuali - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Bologna'>Manuali - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Manuali  Ancona'>Manuali - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari'>Circolari</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Vicenza'>Circolari - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Rovigo'>Circolari - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Rimini'>Circolari - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Reggio Emilia'>Circolari - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Ravenna'>Circolari - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Piacenza'>Circolari - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Parma'>Circolari - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Modena'>Circolari - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Mantova'>Circolari - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Macerata'>Circolari - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Imola'>Circolari - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Forl'>Circolari - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Ferrara'>Circolari - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Bologna'>Circolari - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Circolari  Ancona'>Circolari - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/blog'>Associativi - Blog</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Lists/Calendario'>Calendario Elaborazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/associativi/Lists/Annunci'>Comunicazioni</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/know/fiscale'>Fiscale</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali'>Manuali</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Vicenza'>Manuali - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Rovigo'>Manuali - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Rimini'>Manuali - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Reggio Emilia'>Manuali - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Ravenna'>Manuali - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Piacenza'>Manuali - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Parma'>Manuali - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Modena'>Manuali - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Mantova'>Manuali - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Macerata'>Manuali - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Imola'>Manuali - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Forl'>Manuali - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Ferrara'>Manuali - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Bologna'>Manuali - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Manuali  Ancona'>Manuali - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari'>Circolari</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Vicenza'>Circolari - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Rovigo'>Circolari - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Rimini'>Circolari - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Reggio Emilia'>Circolari - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Ravenna'>Circolari - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Piacenza'>Circolari - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Parma'>Circolari - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Mantova'>Circolari - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Macerata'>Circolari - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Imola'>Circolari - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Forl'>Circolari - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Ferrara'>Circolari - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Bologna'>Circolari - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Circolari  Ancona'>Circolari - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/blog'>Fiscale - Blog</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Lists/Calendario'>Calendario Elaborazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/fiscale/Lists/Annunci'>Comunicazioni</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/know/paghe'>Paghe</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali'>Manuali - Sixtema</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Vicenza'>Manuali - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Rovigo'>Manuali - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Rimini'>Manuali - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Reggio Emilia'>Manuali - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Ravenna'>Manuali - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Piacenza'>Manuali - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Parma'>Manuali - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Modena'>Manuali - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Mantova'>Manuali - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Macerata'>Manuali - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Imola'>Manuali - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Forl'>Manuali - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Ferrara'>Manuali - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Bologna'>Manuali - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Manuali  Ancona'>Manuali - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari'>Circolari - Sixtema</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Vicenza'>Circolari - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Rovigo'>Circolari - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Rimini'>Circolari - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Reggio Emilia'>Circolari - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Ravenna'>Circolari - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Piacenza'>Circolari - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Parma'>Circolari - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Modena'>Circolari - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Mantova'>Circolari - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Macerata'>Circolari - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Imola'>Circolari - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Forl'>Circolari - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Ferrara'>Circolari - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Bologna'>Circolari - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Circolari  Ancona'>Circolari - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/blog'>Paghe - Blog</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Lists/Calendario'>Calendario Elaborazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Lists/Calendario  Ferrara'>Calendario - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Lists/Annunci'>Comunicazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Moduli  Ferrara'>Moduli - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/paghe/Lists/Argomenti Ferrara'>Argomenti Ferrara</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/know/affgen'>Affari Generali</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali'>Manuali</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Vicenza'>Manuali - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Rimini'>Manuali - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Reggio Emilia'>Manuali - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Ravenna'>Manuali - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Piacenza'>Manuali - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Parma'>Manuali - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Modena'>Manuali - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Mantova'>Manuali - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Macerata'>Manuali - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Imola'>Manuali - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Forl'>Manuali - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Ferrara'>Manuali - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Bologna'>Manuali - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Ancona'>Manuali - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Manuali  Rovigo'>Macerata - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari'>Circolari</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Vicenza'>Circolari - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Rovigo'>Circolari - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Rimini'>Circolari - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Reggio Emilia'>Circolari - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Ravenna'>Circolari - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Piacenza'>Circolari - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Parma'>Circolari - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Modena'>Circolari - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Mantova'>Circolari - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Macerata'>Circolari - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Imola'>Circolari - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Forl'>Circolari - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Ferrara'>Circolari - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Bologna'>Circolari - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Circolari  Ancona'>Circolari - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/blog'>Affari Generali - Blog</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Lists/Calendario'>Calendario Elaborazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/affgen/Lists/Annunci'>Comunicazioni</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/know/servcom'>Servizi Comuni</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/servcom/Manuali'>Manuali</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/servcom/Circolari'>Circolari</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/servcom/blog'>Servizi Comuni - Blog</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/servcom/Lists/Calendario'>Calendario Elaborazioni</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/servcom/Lists/Annunci'>Comunicazioni</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/know/SitePages/Banche dati normativa.aspx'>Banche dati normativa</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/SitePages/Lancia Interpreta.aspx'>Interpreta</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/know/SitePages/Banche dati.aspx'>Ipsoa</a></div></li>
+			</ul></li>
+		</ul></li><li class="MM_header"><div class='mm-l0' data-title='Cooperazione'><a href='/coop/SitePages/Pagina iniziale.aspx'>Cooperazione</a></div><ul style="width: 185px;">
+			<li><div class='mm-l1'><a href='/coop/coopLavoro/default.aspx'>Gruppo di lavoro</a></div><ul>
+
+			</ul></li><li><div class='mm-l1'><a href='/coop/coopWiki/Pagine/home.aspx'>Wiki</a></div><ul>
+
+			</ul></li><li><div class='mm-l1'><a href='/coop/Raccolta Interprovinciale/Forms/AllItems.aspx'>Raccolta Interprovinciale</a></div><ul>
+
+			</ul></li><li><div class='mm-l1'><a href='/coop/Lists/Forum'>Forum</a></div></li><li><div class='mm-l1'><a href='/coop/Lists/Lista Argomenti'>Lista Argomenti</a></div></li>
+		</ul></li><li class="MM_header"><div class='mm-l0' data-title='Stampe'><a href='/stampe/SitePages/Pagina iniziale.aspx'>Stampe</a></div><ul style="width: 555px;">
+			<li><div class='mm-l1'><a href='/stampe'>Liste Stampe</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/Sixtema/Esecuzione.aspx'>Sixtema</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/21  Rovigo/Esecuzione.aspx'>21 - Rovigo</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/22  Treviso Conegliano/Esecuzione.aspx'>22 - Treviso Conegliano</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/23  Treviso Castelfranco/Esecuzione.aspx'>23 - Treviso Castelfranco</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/26  Vicenza'>26 - Vicenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/33  Bolzano/Esecuzione.aspx'>33 - Bolzano</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/40  Bologna/Esecuzione.aspx'>40 - Bologna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/41  Ferrara/Esecuzione.aspx'>41 - Ferrara</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/42  Forl/Esecuzione.aspx'>42 - Forlì</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/43  Imola/Esecuzione.aspx'>43 - Imola</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/44  Modena'>44 - Modena</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/45  Reggio Emilia/Esecuzione.aspx'>45 - Reggio Emilia</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/46  Parma/Esecuzione.aspx'>46 - Parma</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/47  Piacenza/Esecuzione.aspx'>47 - Piacenza</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/49  Rimini/Esecuzione.aspx'>49 - Rimini</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/48  Ravenna/Esecuzione.aspx'>48 - Ravenna</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/51  Mantova/Esecuzione.aspx'>51 - Mantova</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/60  Ancona/Esecuzione.aspx'>60 - Ancona</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/61  Macerata/Esecuzione.aspx'>61 - Macerata</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/Lists/70  Firenze/Esecuzione.aspx'>70 - Firenze</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/stampe/dcm'>Manuale</a></div><ul>
+				<li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/dcm/Lists/Dic'>Dizionario</a></div></li><li><div class='mm-l2'><img src='http://spsrv2013/SiteCollectionImages/menu-right.gif' class='MM_limg' /><a href='/stampe/dcm/SitePages/Video.aspx'>Video</a></div></li>
+			</ul></li><li><div class='mm-l1'><a href='/stampe/blog'>Stampe - Blog</a></div><ul>
+
+			</ul></li>
+		</ul></li>
+	</ul>
+</div></span>                                    
+        </div>
+        <!-- MegaMenu -->            
+        <div id="ms-designer-ribbon">
+            
+<div>
+	
+<div id="suiteBar" class="ms-dialogHidden noindex">
+	<div id="suiteBarLeft">
+		<div class="ms-table ms-fullWidth">
+			<div class="ms-tableRow">
+				<div class="ms-tableCell ms-verticalAlignMiddle">
+					<div class='ms-core-brandingText'>Portale dei Servizi - Sixtema - Design page</div>
+	
+				</div>
+				<div id="DeltaSuiteLinks" class="ms-core-deltaSuiteLinks">
+		
+						<div id="suiteLinksBox">
+							
+						</div>
+				
+	</div>
+			</div>
+		</div>
+	</div>
+	<div id="suiteBarRight">
+		<div id="DeltaSuiteBarRight" class="ms-core-deltaSuiteBarRight">
+		
+				<div id="welcomeMenuBox">
+  
+	 
+	<span style="display:none"><menu type='ServerMenu' id="zz1_ID_PersonalActionMenu" hideicons="true"><ie:menuitem id="zz2_ID_PersonalInformation" type="option" iconSrc="/_layouts/15/images/menuprofile.gif?rev=23" onMenuClick="javascript:GoToPage(&#39;\u002fserv\u002fsade\u002f_layouts\u002f15\u002fuserdisp.aspx?Force=True&#39;);return false;" text="Impostazioni personali" description="Aggiornare le proprie informazioni utente, le impostazioni internazionali e della lingua e gli avvisi." menuGroupId="100"></ie:menuitem>
+		<ie:menuitem id="zz3_ID_Logout" type="option" onMenuClick="STSNavigate2(event,&#39;/serv/sade/_layouts/15/SignOut.aspx&#39;);" text="Esci" description="Disconnettersi dal sito." menuGroupId="100"></ie:menuitem>
+		</menu></span><span  id="zz4_Menu_t" class="ms-menu-althov ms-welcome-root" title="Apri menu" onmouseover="void;" hoveractive="ms-menu-althov-active ms-welcome-root ms-welcome-hover" hoverinactive="ms-menu-althov ms-welcome-root" onclick=" CoreInvoke('MMU_Open',byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'),event,true, null, 0); return false;" foa="MMU_GetMenuFromClientId('zz4_Menu')" oncontextmenu="ClkElmt(this); return false;" style="white-space:nowrap"><a class="ms-core-menu-root" id="zz4_Menu" accesskey="/" href="javascript:;" title="Apri menu" onfocus="MMU_EcbLinkOnFocusBlur(byid('zz1_ID_PersonalActionMenu'), this, true);" onkeydown="MMU_EcbLinkOnKeyDown(byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'), event);" onclick=" CoreInvoke('MMU_Open',byid('zz1_ID_PersonalActionMenu'), MMU_GetMenuFromClientId('zz4_Menu'),event,true, null, 0); return false;" oncontextmenu="ClkElmt(this); return false;" menutokenvalues="MENUCLIENTID=zz4_Menu,TEMPLATECLIENTID=zz1_ID_PersonalActionMenu" serverclientid="zz4_Menu">Diletta, Leone (SIALEONE)<span class='ms-accessible'>Utilizzare MAIUSC+INVIO per aprire il menu (nuova finestra)</span></a><span style="height:4px;width:7px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-viewselector-arrow ms-menu-stdarw ms-core-menu-arrow"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Apri menu" style="position:absolute;left:-95px !important;top:-259px !important;" /></span><span style="height:4px;width:7px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-core-menu-arrow ms-viewselector-arrow ms-menu-hovarw"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Apri menu" style="position:absolute;left:-86px !important;top:-259px !important;" /></span></span>
+
+
+				</div>
+				<div id="suiteBarButtons">
+					   <span class="ms-siteactions-root" id="siteactiontd">
+					   
+						
+						<span style="display:none"><menu type='ServerMenu' id="zz5_SiteActionsMenuMain" hideicons="true"><ie:menuitem id="zz6_MenuItem_ShareThisSite" type="option" onMenuClick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharedWithDialog&#39;, function () { DisplaySharedWithDialog(&#39;\u002fserv\u002fsade\u002f&#39;); })" text="Condiviso con..." description="Visualizzare gli utenti e invitare altre persone." menuGroupId="100"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl55_SiteActionsMenuMain_ctl00_MenuItem_EditPage" type="option" iconSrc="/_layouts/15/images/ActionsEditPage.png?rev=23" onMenuClick="window.location = &#39;javascript:{EnsureScriptParams(\&#39;ribbon\&#39;, \&#39;ChangeWikiPageMode\&#39;, true);}&#39;;" text="Modifica pagina" description="Consente di modificare il contenuto della pagina." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="zz7_MenuItem_CreatePage" type="option" iconSrc="/_layouts/15/images/NewContentPageHH.png?rev=23" onMenuClick="OpenCreateWebPageDialog(&#39;\u002fserv\u002fsade\u002f_layouts\u002f15\u002fcreatewebpage.aspx&#39;)" text="Aggiungi una pagina" description="Consente di creare una pagina che pu&#242; essere personalizzata." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="zz8_MenuItem_Create" type="option" onMenuClick="GoToPage(&#39;\u002fserv\u002fsade\u002f_layouts\u002f15\u002faddanapp.aspx&#39;)" text="Aggiungi un&#39;app" description="Consente di creare altri tipi di pagine, elenchi, raccolte e siti." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="zz9_MenuItem_ViewAllSiteContents" type="option" iconSrc="/_layouts/15/images/allcontent32.png?rev=23" onMenuClick="STSNavigate2(event,&#39;/serv/sade/_layouts/15/viewlsts.aspx&#39;);" text="Contenuto del sito" description="Consente di visualizzare tutte le raccolte e gli elenchi nel sito." menuGroupId="200"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl55_SiteActionsMenuMain_ctl00_wsaDesignEditor" type="option" iconSrc="/_layouts/15/images/designer.png?rev=23" onMenuClick="STSNavigate2(event,&#39;/_layouts/15/DesignSite.aspx&#39;);" text="Gestione progettazione" description="Cambia l&#39;aspetto del sito." menuGroupId="300"></ie:menuitem>
+		<ie:menuitem id="zz10_MenuItem_Settings" type="option" iconSrc="/_layouts/15/images/settingsIcon.png?rev=23" onMenuClick="GoToPage(&#39;\u002fserv\u002fsade\u002f_layouts\u002f15\u002fsettings.aspx&#39;)" text="Impostazioni sito" description="Consente di accedere a tutte le impostazioni del sito." menuGroupId="300"></ie:menuitem>
+		<ie:menuitem id="ctl00_ctl55_SiteActionsMenuMain_ctl00_ctl02" type="option" onMenuClick="STSNavigate2(event,&#39;/serv/sade/GettingStarted.aspx&#39;);" text="Introduzione" description="Iniziare a usare il sito." menuGroupId="2147483647"></ie:menuitem>
+		</menu></span><span id="zz11_SiteActionsMenu_t" class="ms-siteactions-normal" title="Impostazioni" onmouseover="void;" hoveractive="ms-siteactions-normal ms-siteactions-hover" hoverinactive="ms-siteactions-normal" onclick=" CoreInvoke('MMU_Open',byid('zz5_SiteActionsMenuMain'), MMU_GetMenuFromClientId('zz11_SiteActionsMenu'),event,true, null, 0); return false;" foa="MMU_GetMenuFromClientId('zz11_SiteActionsMenu')" oncontextmenu="ClkElmt(this); return false;"><a class="ms-core-menu-root" id="zz11_SiteActionsMenu" accesskey="/" href="javascript:;" title="Impostazioni" onkeydown="MMU_EcbLinkOnKeyDown(byid('zz5_SiteActionsMenuMain'), MMU_GetMenuFromClientId('zz11_SiteActionsMenu'));" menutokenvalues="MENUCLIENTID=zz11_SiteActionsMenu,TEMPLATECLIENTID=zz5_SiteActionsMenuMain" serverclientid="zz11_SiteActionsMenu"><span class="ms-siteactions-imgspan"><img class="ms-core-menu-buttonIcon" src="/_layouts/15/images/spcommon.png?rev=23" alt="Impostazioni" title="Impostazioni" /></span><span class='ms-accessible'>Utilizzare MAIUSC+INVIO per aprire il menu (nuova finestra)</span></a></span></span>
+<span id="ms-help">
+	<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-1px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-1px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-19px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-1px&#39;;" id="ctl00_ctl55_TopHelpLink" accesskey="6" title="?" onclick="TopHelpButtonClick(&#39;HelpHome&#39;,event);return false" href="../../../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/1040/images/spintl.png?rev=23" alt="?" style="border:0;position:absolute;left:-19px;top:-1px;" /></span></span></a>
+</span>
+				</div>
+		
+	</div>
+	</div>
+</div>
+	<div id="s4-ribbonrow">
+		<div id="globalNavBox">
+<div id="ribbonBox">
+	<div id="s4-ribboncont">
+		<div id="DeltaSPRibbon">
+		
+			<input id="RibbonContainer_activeTabId" name="ctl00$ctl55$ctl04" type="hidden" value=""/><div id='RibbonContainer'><div class="ms-cui-ribbon ms-cui-needIEFilter" id="Ribbon" unselectable="on" aria-describedby="ribboninstructions" oncontextmenu="return false" role="toolbar"><span class="ms-cui-hidden" id="ribboninstructions" unselectable="on">Per spostarsi all&#39;interno della barra multifunzione, utilizzare i pulsanti di spostamento standard del browser. Per passare da un gruppo all&#39;altro, utilizzare CTRL+FRECCIA SINISTRA o CTRL+FRECCIA DESTRA. Per passare alla prima scheda della barra multifunzione utilizzare CTRL+[. Per passare all&#39;ultimo comando selezionato, utilizzare CTRL+]. Per attivare un comando, premere INVIO.</span><div class="ms-cui-ribbonTopBars" unselectable="on"><div class="ms-cui-topBar1" unselectable="on" style="display:none"><div class="ms-cui-qat-container" unselectable="on"></div></div><div class="ms-cui-topBar2" unselectable="on"><div class="ms-cui-jewel-container" id="jewelcontainer" unselectable="on" style="display:none"></div><div class="ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden" id="RibbonContainer-TabRowLeft" unselectable="on">
+				</div><ul class="ms-cui-tts" unselectable="on" role="tablist"><li class="ms-cui-tt ms-browseTab ms-cui-tt-s" id="Ribbon.Read-title" unselectable="on" role="tab"><a class="ms-cui-tt-a" unselectable="on" href="javascript:;" onclick="_ribbonStartInit('Ribbon.Read',false, event);" title="Sfoglia" onkeydown="if(event != null && event.keyCode == 13){ if(typeof(_ribbon) != 'undefined') _ribbon.launchedByKeyboard = true; _ribbonStartInit('Ribbon.Read',false, event);  }"><span class="ms-cui-tt-span" unselectable="on">Sfoglia</span><span class="ms-cui-hidden" unselectable="on">Scheda 1 di 2.</span></a></li><li class="ms-cui-tt" id="Ribbon.WikiPageTab-title" unselectable="on" role="tab"><a class="ms-cui-tt-a" unselectable="on" href="javascript:;" onclick="_ribbonStartInit('Ribbon.WikiPageTab',false, event);" title="Pagina" onkeydown="if(event != null && event.keyCode == 13){ if(typeof(_ribbon) != 'undefined') _ribbon.launchedByKeyboard = true; _ribbonStartInit('Ribbon.WikiPageTab',false, event);  }"><span class="ms-cui-tt-span" unselectable="on">Pagina</span><span class="ms-cui-hidden" unselectable="on">Scheda 2 di 2.</span></a></li></ul><div class="ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont" id="RibbonContainer-TabRowRight" unselectable="on">
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-91px&#39;; this.firstChild.firstChild.style.top=&#39;-232px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-200px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharingDialog&#39;, function(){DisplaySharingDialog(&#39;\u002fserv\u002fsade&#39;)}); return false;" id="ctl00_ctl55_site_share_button" title="Consente di concedere agli utenti l&#39;accesso al sito." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl55$site_share_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Condividi" style="position:absolute;left:-200px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Condividi</span></a>
+					<a onmouseover="this.firstChild.firstChild.style.left=&#39;-217px&#39;; this.firstChild.firstChild.style.top=&#39;-192px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-218px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="SP.SOD.executeFunc(&#39;followingcommon.js&#39;, &#39;FollowSite&#39;, function() { FollowSite(); }); return false;" id="site_follow_button" title="Consente di seguire questo sito e di ritornarvi facilmente dalla pagina Siti." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl55$site_follow_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Segui" style="position:absolute;left:-218px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Segui</span></a>
+					
+					<a class="ms-rtefocus-invalid ms-promotedActionButton" id="ctl00_ctl55_PageStateActionButton" href="javascript:" onclick="CoreInvoke('PageActionClick', this);return false;" _action="edit" _editoffsetx="236" _editoffsety="84" _edithoveroffsetx="181" _edithoveroffsety="192" _saveoffsetx="0" _saveoffsety="433" _savehoveroffsetx="0" _savehoveroffsety="449" _edittooltip="Modifica" _savetooltip="Salva" title="Modifica" onmouseover="this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsetx&#39;) : this.getAttribute(&#39;_savehoveroffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_edithoveroffsety&#39;) : this.getAttribute(&#39;_savehoveroffsety&#39;)) + &#39;px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsetx&#39;) : this.getAttribute(&#39;_saveoffsetx&#39;)) + &#39;px&#39;; this.firstChild.firstChild.style.top=&#39;-&#39; + (this.getAttribute(&#39;_action&#39;) === &#39;edit&#39; ? this.getAttribute(&#39;_editoffsety&#39;) : this.getAttribute(&#39;_saveoffsety&#39;)) + &#39;px&#39;;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=23" style="position:absolute;left:-236px;top:-84px;" /></span><span class="ms-promotedActionButton-text">Modifica</span></a>
+<span id="fullscreenmodebox" class="ms-qatbutton">
+	<span id="fullscreenmode">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl55_fullscreenmodeBtn" title="Focalizzazione sul contenuto" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../../../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Focalizzazione sul contenuto" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+	</span>
+	<span id="exitfullscreenmode" style="display: none;">
+		<a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl55_exitfullscreenmodeBtn" title="Focalizzazione sul contenuto" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../../../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=23" alt="Focalizzazione sul contenuto" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+	</span>
+</span>
+
+
+				</div></div></div></div></div>
+		
+	</div>
+	</div>
+	<span id="DeltaSPNavigation">
+			<span id="ctl00_ctl55_ctl11_publishingRibbon"></span>
+
+	</span>
+</div>
+<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+		
+  <div id="WebPartAdderUpdatePanelContainer">
+	<div id="ctl00_ctl55_WebPartAdderUpdatePanel">
+			
+		<span id="ctl00_ctl55_WebPartAdder"></span>
+	  
+		</div>
+  </div>
+
+	</div>
+		</div>
+	</div>
+	<div id="notificationArea" class="ms-notif-box"></div>
+	<div id="DeltaPageStatusBar">
+		
+		<div id="pageStatusBar"></div>
+	
+	</div>
+
+</div>
+
+        </div>
+        
+        <div id="s4-workspace" class="ms-core-overlay">
+            <div id="s4-bodyContainer">
+                <div id="s4-titlerow" class="ms-dialogHidden s4-titlerowhidetitle">
+                    <div id="titleAreaBox" class="ms-noList ms-table ms-core-tableNoSpace">
+                        <div id="titleAreaRow" class="ms-tableRow">
+                            <div id="siteIcon" class="ms-tableCell ms-verticalAlignTop">
+                                
+                                <div id="DeltaSiteLogo">
+	
+                                    <a id="ctl00_onetidProjectPropertyTitleGraphic" title="Adempimento" class="ms-siteicon-a" href="/serv/sade">
+                                    	<img id="ctl00_onetidHeadbnnr2" class="ms-siteicon-img" name="onetidHeadbnnr0" src="app/css/sp/Sixtema.png" alt="Adempimento" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="ms-breadcrumb-box ms-tableCell ms-verticalAlignTop">
+                                <div class="ms-breadcrumb-top">
+                                    <div class="ms-breadcrumb-dropdownBox" style="display:none;">
+                                        <span id="DeltaBreadcrumbDropdown">
+                                        
+                                        </span>
+                                    </div>
+                                    <div id="DeltaTopNavigation" class="ms-displayInline">
+	
+                                    
+                                    <a name="startNavigation">
+                                    </a>
+                                </div>
+                                </div>
+                                <h1 id="pageTitle" class="ms-core-pageTitle">
+                                    <span id="DeltaPlaceHolderPageTitleInTitleArea">
+                                    
+                                    <span><a href="#ctl00_PlaceHolderPageTitleInTitleArea_ctl00_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=EDWmOuXsw40tdvkzaeqpZNm9hRILB2bDQ9a2brBbNS60kEE-NR7jaei1q0HrhTG3u41Kjv_1aGFi8xd9DrAdUEUkjnQGvNZl0Un-wqbOUg41&amp;t=635418438400000000" width="0" height="0" style="border-width:0px;" /></a><span><a href="/serv/sade/SitePages/Servizi%20Paghe.aspx">Servizi Paghe (Design)</a></span><a id="ctl00_PlaceHolderPageTitleInTitleArea_ctl00_SkipLink"></a></span>
+                                    
+                                    </span>
+                                    <div id="DeltaPlaceHolderPageDescription" class="ms-displayInlineBlock ms-normalWrap">
+	
+                                    <a href="javascript:;" id="ms-pageDescriptionDiv" style="display:none">
+                                        <span id="ms-pageDescriptionImage">
+                                        </span>
+                                    </a>
+                                    <span class="ms-accessible" id="ms-pageDescription"></span>
+                                </div>
+                                </h1>
+                            </div>
+                            <div class="ms-tableCell ms-verticalAlignTop">
+                                <div id="DeltaPlaceHolderSearchArea" class="ms-mpSearchBox ms-floatRight">
+	
+                                
+                                
+                                <div id="searchInputBox">
+                                    <div class="ms-webpart-chrome ms-webpart-chrome-fullWidth ">
+		<div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPartWPQ1" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="" ><div componentid="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr"><div id="SearchBox" name="Control"><div class="ms-srch-sb ms-srch-sb-border" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sboxdiv"><input type="text" value="Cerca in questo sito" maxlength="2048" accessKey="S" title="Cerca in questo sito" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" onkeypress="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {if (Srch.U.isEnterKey(String.fromCharCode(event.keyCode))) {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);return Srch.U.cancelEvent(event);}})" onkeydown="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.activateDefaultQuerySuggestionBehavior();})" onfocus="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr');ctl.hidePrompt();ctl.setBorder(true);})" onblur="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {var ctl = $find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr'); if (ctl){ ctl.showPrompt(); ctl.setBorder(false);}})" class="ms-textSmall ms-srch-sb-prompt ms-helperText"/><a title="Cerca" class="ms-srch-sb-searchLink" id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_SearchLink" onclick="EnsureScriptFunc('Search.ClientControls.js', 'Srch.U', function() {$find('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr').search($get('ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_sbox').value);})" href="javascript: {}" ><img src="/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-sb-searchImg" id="searchImg" alt="Cerca" /></a><div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer"><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_csr_AutoCompList"></div></div></div></div></div><noscript><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1_noscript">JavaScript non è abilitato nel browser. Attivare JavaScript e riprovare.</div></noscript><div id="ctl00_PlaceHolderSearchArea_SmallSearchInputBox1">
+
+		</div><div class="ms-clear"></div></div>
+	</div>
+                                    
+                                </div>
+                                
+                                
+                                
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contentRow">
+                    <div id="sideNavBox" class="ms-dialogHidden ms-forceWrap ms-noList">
+                        <div id="DeltaPlaceHolderLeftNavBar" class="ms-core-navigation" role="navigation">
+	
+                        
+                        <a id="startNavigation" name="startNavigation" tabIndex="-1">
+                        </a>
+                        
+                        
+                        
+                        
+                        
+	
+
+                        <div class="ms-core-sideNavBox-removeLeftMargin">
+                            <div id="ctl00_PlaceHolderLeftNavBar_QuickLaunchNavigationManager">
+		
+                            
+                            <div id="zz12_V4QuickLaunchMenu" class=" noindex ms-core-listMenu-verticalBox">
+			<ul id="zz13_RootAspMenu" class="root ms-core-listMenu-root static">
+				<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Pagina iniziale.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Adempimento (Design)</span></span></a><ul class="static">
+					<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Servizi Fiscale.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Fiscale</span></span></a></li><li class="static selected"><a class="static selected menu-item ms-core-listMenu-item ms-displayInline ms-core-listMenu-selected ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Servizi Paghe.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Paghe</span><span class="ms-hidden">Attualmente selezionato</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Servizi Affari Generali.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Affari Generali</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Servizi Comuni.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Servizi Comuni</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sade/SitePages/Servizi CRM.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">CRM</span></span></a></li>
+				</ul></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/SitePages/Pagina iniziale.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Servizi</span></span></a><ul class="static">
+					<li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/sass"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Associativi</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/serv/stec"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Tecnologici</span></span></a></li><li class="static"><a class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode" tabindex="0" href="/stampe/SitePages/Pagina iniziale.aspx"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Report</span></span></a></li>
+				</ul></li><li class="static ms-verticalAlignTop ms-listMenu-editLink ms-navedit-editArea"><span class="ms-navedit-editSpan" id="zz12_V4QuickLaunchMenu_NavMenu_Edit"><a id="zz12_V4QuickLaunchMenu_NavMenu_EditLinks" class="ms-navedit-editLinksText" href="#" onclick="g_QuickLaunchMenu = null; EnsureScriptParams(&#39;quicklaunch.js&#39;, &#39;QuickLaunchInitEditMode&#39;, &#39;zz12_V4QuickLaunchMenu&#39;, 2, 0, 1, &#39;\u002fSERV\u002fSADE&#39;); cancelDefault(event); return false;"><span class="ms-displayInlineBlock"><span class="ms-navedit-editLinksIconWrapper ms-verticalAlignMiddle"><img class="ms-navedit-editLinksIcon" src="/_layouts/15/images/spcommon.png?rev=23" /></span><span class="ms-metadata ms-verticalAlignMiddle">Modifica collegamenti</span></span></a><span id="zz12_V4QuickLaunchMenu_NavMenu_Loading" class="ms-navedit-menuLoading ms-hide"><a id="zz12_V4QuickLaunchMenu_NavMenu_GearsLink" href="#" onclick="HideGears(); return false;" title="L&amp;#39;animazione indica che l&amp;#39;operazione è in corso. Fare clic per rimuovere l&amp;#39;immagine animata."><img id="zz12_V4QuickLaunchMenu_NavMenu_GearsImage" src="/_layouts/15/images/loadingcirclests16.gif?rev=23" /></a></span><div id="zz12_V4QuickLaunchMenu_NavMenu_ErrorMsg" class="ms-navedit-errorMsg">
+
+				</div></span></li>
+			</ul>
+		</div>
+                            
+	</div>
+                            
+                            
+                            <div class="ms-core-listMenu-verticalBox">
+                                <a id="ctl00_PlaceHolderLeftNavBar_PlaceHolderQuickLaunchBottom_idNavLinkViewAll" accesskey="3" class="ms-core-listMenu-item ms-core-listMenu-heading" href="/serv/sade/_layouts/15/viewlsts.aspx"><span class="ms-splinkbutton-text">Contenuto del sito</span></a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                        
+</div>
+                    </div>
+                    <div id="contentBox" aria-live="polite" aria-relevant="all">
+                        <div id="notificationArea" class="ms-notif-box">
+                        </div>
+                        <div id="DeltaPlaceHolderMain">
+	
+                        <a id="mainContent" name="mainContent" tabindex="-1">
+                        </a>
+                        
+	<span id="ctl00_PlaceHolderMain_wikiPageNameDisplay" style="display: none;">
+		Servizi Paghe
+	</span>
+	<span id="ctl00_PlaceHolderMain_wikiPageNameEdit" style="display:none;">
+		<input name="ctl00$PlaceHolderMain$wikiPageNameEditTextBox" type="text" value="Servizi Paghe" maxlength="123" id="ctl00_PlaceHolderMain_wikiPageNameEditTextBox" />
+	</span>
+	<div style='display:none'><input type="submit" name="ctl00$PlaceHolderMain$btnWikiEdit" value="edit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$btnWikiEdit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_btnWikiEdit" /></div><div style='display:none'><input type="submit" name="ctl00$PlaceHolderMain$btnWikiSave" value="edit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$btnWikiSave&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_btnWikiSave" /></div><div style='display:none'><input type="submit" name="ctl00$PlaceHolderMain$btnWikiRevert" value="Revert" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$btnWikiRevert&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_btnWikiRevert" /></div>
+	<div id="ctl00_PlaceHolderMain_WikiField">
+		<div class="ms-wikicontent ms-rtestate-field" style="padding-right: 10px"><div class="ExternalClass7CEB0E824096467AA245394D0DBDE96A"><table id="layoutsTable" style="width&#58;100%;"><tbody><tr style="vertical-align&#58;top;"><td style="width&#58;100%;"><div class="ms-rte-layoutszone-outer" style="width&#58;100%;"><div class="ms-rte-layoutszone-inner">
+		<div class="ms-rtestate-read ms-rte-wpbox"><div class="ms-rtestate-read d66b358b-5dd3-4d23-bc9a-06ceef466592" id="div_d66b358b-5dd3-4d23-bc9a-06ceef466592"><div id="MSOZoneCell_WebPartWPQ2" WebPartWPQ2_RelatedListId="{4f9cd9f5-717f-4e33-ae0e-514bb6da99dc}" WebPartWPQ2_WebPartStorageKey="bc721aaf-92fe-4408-9ff1-04f4e48a4121" class="s4-wpcell ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth " onkeyup="WpKeyUp(event)" onmouseup="WpClick(event)">
+			<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+	<div WebPartID="bc721aaf-92fe-4408-9ff1-04f4e48a4121" WebPartID2="d66b358b-5dd3-4d23-bc9a-06ceef466592" HasPers="false" id="WebPartWPQ2" width="100%" class="noindex " allowRemove="false" allowDelete="false" style="" ><script type="text/javascript" src="/Componenti/jquery.blockUI.js" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal"></script><script type="text/javascript" src="/Componenti/lancioapplicazioni.js" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal"></script><link href="app/css/sp/lancioapplicazioni.css" rel="stylesheet" type="text/css" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal"><link type="text/css" href="/Componenti/css/custom-theme/jquery-ui-1.8.18.custom.css" rel="stylesheet" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal"><script type="text/javascript" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal">
+      try {
+      $get('MSOZoneCell_WebPartWPQ2').onmouseup = function (){ };
+      $get('SelectionCbxWebPartWPQ2').parentNode.parentNode.style.display = 'none';
+      }
+      catch (ex) { }
+    </script>
+    <link rel="stylesheet" 
+          type="text/css" 
+          href="app/css/sp/applimg.css" 
+          xmlns:x="http://www.w3.org/2001/XMLSchema" 
+          xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" 
+          xmlns:asp="http://schemas.microsoft.com/ASPNET/20" 
+          xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" 
+          xmlns:SharePoint="Microsoft.SharePoint.WebControls" 
+          xmlns:o="urn:schemas-microsoft-com:office:office" 
+          xmlns:ddwrt2="urn:frontpage:internal">
+	<!--
+      HttpPath: http://spsrv2013/serv/sade/_vti_bin/owssvr.dll?CS=65001
+      HttpHost: http://spsrv2013
+      HttpVDir: http://spsrv2013/serv/sade
+      HttpVDirUniEncoded: http://spsrv2013/serv/sade
+      ListUrlDir: /serv/sade/Lists/ServPagheLinkList
+      ListTitle: ServPagheLinkList-->
+      <div id="lancioApp" title="Lancio sull'ufficio 000" style="display:none" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal"><p>Sei sicuro di voler lanciare il servizio sull'ufficio 000?</p></div>
+
+      <div id="preferitiPopup" style="display: none" xmlns:x="http://www.w3.org/2001/XMLSchema" xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" xmlns:asp="http://schemas.microsoft.com/ASPNET/20" xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" xmlns:SharePoint="Microsoft.SharePoint.WebControls" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ddwrt2="urn:frontpage:internal">
+
+      <h1>Salvataggio nei preferiti</h1><div id="prefLevel"></div><div id="prefTitolo"><label>Titolo:</label><input type="text" readonly></div><div id="prefDescri"><label>Descrizione:</label><textarea rows="4"></textarea></div><div id="prefFooter"><input type="button" class="ok" value="Salva"><input type="button" class="cancel" value="Rinuncia"></div><div id="prefContextPresent" style="display:none"><label>Con contesto</label><input type="checkbox" checked style="text-align: left;"></div><div id="prefContext" style="clear: both;"><label>Contesto:</label><input type="text" readonly></div></div>
+
+      <div id="applcontainer" 
+      	xmlns:x="http://www.w3.org/2001/XMLSchema" 
+      	xmlns:d="http://schemas.microsoft.com/sharepoint/dsp" 
+      	xmlns:asp="http://schemas.microsoft.com/ASPNET/20" 
+      	xmlns:__designer="http://schemas.microsoft.com/WebParts/v2/DataView/designer" 
+      	xmlns:SharePoint="Microsoft.SharePoint.WebControls" 
+      	xmlns:o="urn:schemas-microsoft-com:office:office" 
+      	xmlns:ddwrt2="urn:frontpage:internal">
+
+      <div id="applicazioni" listUrlDir="/serv/sade/Lists/ServPagheLinkList" listTitle="ServPagheLinkList" listId="{4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC}" relUrl="/serv/sade">
+      	<ul class="tabcontainer">
+      		<li tabclass="tab_1_" class="selected">Sixtema</li>
+      		<li tabclass="tab_2_">Provincia</li>
+      		<li tabclass="tab_3_">Ufficio</li>
+      	</ul>
+      	<div class="tabcontent tab_1_ selected">
+      		<div class="container">
+      			<!--Livello: Sixtema (1_), Sezione: Applicazioni (1_)-->
+      			<div class="cheader">
+      				<div class="htitle">Applicazioni<em> (2)</em></div>
+      			</div>
+      			<div class="ctag"><img src="app/css/sp/t.gif" class="six24nov"></div>
+      			<div class="taskcontainer">
+      				<div class="task sixtema" ambiente="PROD" applid="">
+      					<div class="icon">
+      						<img src="app/css/sp/envelope_open.png">
+      						<div class="attachcontent">
+      							<div class="ExternalClassEEE0CF3ED1A34CE2A0E5D0760BCDE660">
+      								<div>Applicativo per determinare in modo personalizzato il costo aziendale di un dipendente. L'elaborazione accede ai dati statistici e alle tabelle gestite dal servizio Paghe  (contratti, qualifiche, tariffe, contribuzione)</div>
+      								<div>
+      								</div>
+      								<div>Link al manuale:</div>
+      								<div><a href="/know/paghe/Manuali/Manuale_CASPER.doc">Manuale Casper</a></div>
+      							</div>
+      						</div>
+      					</div>
+      					<a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=681&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx">
+      						<div class="title">Casper</div><div class="descri">Casper​ (Sixtema)</div>
+      					</a>
+      					<div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="681"></div>
+      					<div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="681"></div>
+      				</div>
+      				<div class="task sixtema" ambiente="PROD" applid="cdc06ef3-cc07-48e2-b8d9-53ac018effa2">
+      					<div class="icon">
+      						<img src="app/css/sp/envelope_open.png">
+      						<div class="attachcontent">
+      							<div class="ExternalClass884B9739641F44AFB7C43A24F81164DD"><div>Consolidamento elaborazioni paghe e governo funzionalità  degli applicativi.</div>
+      							<div> </div>
+      							<div>
+      								<div>Link al manuale:</div>
+      								<div><a href="/know/paghe/Manuali/Manuale%20Gestione%20Abilitazione%20Sedi.doc"><font>Manuale gestione abilitazione sedi</font></a></div>
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      				<a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=743&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx">
+      					<div class="title">Cambiomese</div><div class="descri">Cambiomese (PROD)</div>
+      				</a>
+      				<div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="743"></div>
+      				<div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="743"></div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      <div class="tabcontent tab_2_"><div class="container">
+      	<!--Livello: Provincia (2_), Sezione: Applicazioni (1_)--><div class="cheader"><div class="htitle">Applicazioni<em> (20)</em></div>
+      </div>
+      <div class="ctag"><img src="app/css/sp/t.gif" class="pro24nov"></div>
+      <div class="taskcontainer">
+      	<div class="task provincia" ambiente="PROD" applid="78562f9b-ae94-491e-bc59-866531a39a75">
+      		<div class="icon">
+      			<img src="app/css/sp/envelope_open.png">
+      			<div class="attachcontent">
+      				<div class="ExternalClass5832502A48F143728C4283DFD0470C13">
+      					<div>Gestione di tutti gli adempimenti per colf e badanti (predisposizione mensile di un prospetto paga, versamento trimestrale dei contributi, certificazione dei compensi erogati)</div>
+      					<div> </div>
+      					<div>Link al manuale:</div>
+      					<div><a href="/know/paghe/Manuali/Manuale%20COLF%20E%20BADANTI%20WEB.doc">Manuale Colf&amp;Badanti web</a></div>
+      				</div>
+      			</div>
+      		</div>
+      		<a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=679&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx">
+      			<div class="title">Colf Web</div><div class="descri">Colf Web (Provincia)</div>
+      		</a>
+      		<div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="679"></div>
+      		<div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="679"></div>
+      	</div>
+      	<div class="task provincia" ambiente="ALFA" applid="78562f9b-ae94-491e-bc59-866531a39a75"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass5B5EECD5201E4D679CCDA8E127E37A48"><div>Gestione di tutti gli adempimenti per colf e badanti (predisposizione mensile di un prospetto paga, versamento trimestrale dei contributi, certificazione dei compensi erogati) </div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20COLF%20E%20BADANTI%20WEB.doc"><font>Manuale Colf&amp;Badanti web</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=702&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Colf Web</div><div class="descri">Colf Web (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="702"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="702"></div></div><div class="task provincia" ambiente="PROD" applid=""><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassF75587AF76B046A4AB355419849A45F1"><div>Applicativo per determinare in modo personalizzato il costo aziendale di un dipendente. L'elaborazione accede ai dati statistici e alle tabelle gestite dal servizio Paghe  (contratti, qualifiche, tariffe, contribuzione)</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale_CASPER.doc"><font>Manuale Casper</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=682&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Casper</div><div class="descri">Casper​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="682"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="682"></div></div><div class="task provincia" ambiente="PROD" applid="cdc06ef3-cc07-48e2-b8d9-53ac018effa2"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassB7CFE84190824DBDA0048BA15C19E309"><div>Consolidamento elaborazioni paghe e governo funzionalità  degli applicativi.</div>
+<div> </div>
+<div>​<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Gestione%20Abilitazione%20Sedi.doc"><font>Manuale gestione abilitazione sedi</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=742&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Cambiomese</div><div class="descri">Cambiomese (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="742"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="742"></div></div><div class="task provincia" ambiente="PROD" applid="ad185157-4a14-4c5a-b8ea-68960b6f2428"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass7E0DAB8DED9E47DCACD2F4125B7F4679"><div>Gestione e predisposizione domanda telematica per fruizione sgravio L. 247/2007.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Gestione%20sgravio%20l247_07%20anno%20rif.%202009.doc">Manuale DecoWeb</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=698&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Decoweb</div><div class="descri">Decoweb​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="698"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="698"></div></div><div class="task provincia" ambiente="PROD" applid="52501a29-1a1c-4a6f-b2d7-4133722f018f"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass50FC6728517D48E69902AAD3BB805505"><div>Gestione  denunce d’infortunio soci e titolari d'azienda con invio file telematico all'Inail. </div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20denuncia%20infortunio%20indipendenti.doc">Manuale denuncia infortunio indipendenti</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=693&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Denuncia infortunio indipendenti</div><div class="descri">Denuncia infortunio indipendenti​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="693"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="693"></div></div><div class="task provincia" ambiente="PROD" applid="fb8075f5-c120-4bc6-97fc-bb08436e1ead"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass33460076055B402EBA97E01B38C63750"><div>Predisposizione e spedizione file telematici per casse edili.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Edilnet.doc">Manuale EdilNet</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=691&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">EdilNet</div><div class="descri">EdilNet​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="691"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="691"></div></div><div class="task provincia" ambiente="ALFA" applid="fb8075f5-c120-4bc6-97fc-bb08436e1ead"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass7A941C91C87746E1BC3AC8DF2D63C6E7"><div>Predisposizione e spedizione file telematici per casse edili.</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Edilnet.doc"><font>Manuale EdilNet</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=728&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">EdilNet</div><div class="descri">EdilNet (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="728"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="728"></div></div><div class="task provincia" ambiente="ALFA" applid="35e07674-2687-40a8-b9ab-93436ef6dbc3"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassD1E0445A8BAD47DD87FFE0F5CD8BBF2C"><div>Gestione rendicontazione completa fondi pensione e predisposizione file telematici.</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Fondi%20Web.doc"><font>Manuale FondiWeb</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=720&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">FondiWeb</div><div class="descri">FondiWeb (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="720"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="720"></div></div><div class="task provincia" ambiente="PROD" applid="35e07674-2687-40a8-b9ab-93436ef6dbc3"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass10512BC76BCB4C72A81E968562044558"><div>Gestione rendicontazione completa fondi pensione e predisposizione file telematici.</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Fondi%20Web.doc"><font>Manuale FondiWeb</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=723&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">FondiWeb</div><div class="descri">FondiWeb (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="723"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="723"></div></div><div class="task provincia" ambiente="PROD" applid="21b96690-5c5c-4078-a806-019352770143"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass47FA2B7DA2B749BB968BA8CA2C1A5AB0"><div>Controllo  in tempo reale avanzamento  stato elaborativo paghe nei vari uffici.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Monitor%20Elaborazioni.doc">Manuale Monitor Elaborazioni</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=750&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Monitor Elaborazioni</div><div class="descri">Monitor Elaborazioni (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="750"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="750"></div></div><div class="task provincia" ambiente="PROD" applid="8c0586f5-4a69-48c1-8265-10d0c5312ea8"><div class="icon"><img src="app/css/sp/envelope_open.png"></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=765&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Report</div><div class="descri">Report</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="765"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="noattachment" itemId="765"></div></div><div class="task provincia" ambiente="PROD" applid=""><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassDB30A8AC3D77403790B3FBF9590B2DD4"><div>Software per la gestione delle presenze dei dipendenti. E' possibile gestire note aziendali con scadenziari, stampe a consuntivo dei fogli presenze e stampe riepilogative aziendali</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Spirit.doc">Manuale Spirit</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=685&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Spirit</div><div class="descri">Spirit​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="685"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="685"></div></div><div class="task provincia" ambiente="PROD" applid="28ae0911-4b21-4ade-964a-f84a7d8e6ed4"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass38D1143237354617B0AC02B5294007D0"><div>Stampe di supporto e prospetti informativi per gli adempimenti richiesti in materia di lavoro.</div>
+<div> </div>
+<div><br />Link al manuale:<br /><a href="/know/paghe/Manuali/Manuale%20Stampe%20Multiaziendali.doc">Manuale Stampe Multiaziendali</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=756&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Stampe Multiaziendali</div><div class="descri">Stampe Multiaziendali (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="756"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="756"></div></div><div class="task provincia" ambiente="PROD" applid="89d68911-1478-48a7-9a92-64da4b3ca8ad"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass0B00B79C02174FABA99BEF95E1865DF7"><div>Tabelle di aggancio per gestione rilevazioni presenze da marcatempo elettronici.</div>
+<div> </div>
+<div><div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Acquisizione%20da%20marcatempo%20e%20Tabella%20delle%20causali.doc"><font>Manuale Tabelle causali</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=753&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Tabelle causali</div><div class="descri">Tabelle causali (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="753"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="753"></div></div><div class="task provincia" ambiente="ALFA" applid="89d68911-1478-48a7-9a92-64da4b3ca8ad"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass96DBFA01258443009E79C8806D9CCA95"><div>Tabelle di aggancio per gestione rilevazioni presenze da marcatempo elettronici.</div>
+<div> </div>
+<div><div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Acquisizione%20da%20marcatempo%20e%20Tabella%20delle%20causali.doc"><font>Manuale Tabelle causali</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=758&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Tabelle causali</div><div class="descri">Tabelle causali (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="758"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="758"></div></div><div class="task provincia" ambiente="PROD" applid="6fee2085-f674-4c5a-9667-24d02250f03e"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass7BE071D98C5D4B84AB6D507589750844"><div>Generazione  flusso telematico Uniemens e DMag.</div>
+<div> </div>
+<div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniEmens.doc">Manuale UniEmens</a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20gestione%20agricoltura.doc">Manuale gestione agricoltura</a></div>
+<div> </div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=695&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Uniemens/DMAG</div><div class="descri">Uniemens/DMAG​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="695"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="695"></div></div><div class="task provincia" ambiente="ALFA" applid="6fee2085-f674-4c5a-9667-24d02250f03e"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass416B2F08C02D4F0B9F735DAF843F269B"><div>Generazione  flusso telematico Uniemens e DMag.</div>
+<div> </div>
+<div><div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniEmens.doc"><font>Manuale UniEmens</font></a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20gestione%20agricoltura.doc"><font>Manuale gestione agricoltura</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=735&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Uniemens/DMAG</div><div class="descri">Uniemens/DMAG (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="735"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="735"></div></div><div class="task provincia" ambiente="PROD" applid="3d2a5591-dcc4-40aa-b351-a945319821e2"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassCDE65168FEA246749CCDDC3F19E714F2"><div>Gestione monitor vidimazioni cartacee Libro Unico del Lavoro e processo di generazione del registro elettronico</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniRe.doc">Manuale UniRe</a></div>
+<div><div>(Estratto dal manuale del Libro Unico del Lavoro)</div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=688&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Unire</div><div class="descri">Unire​ (Provincia)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="688"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="688"></div></div><div class="task provincia" ambiente="ALFA" applid="3d2a5591-dcc4-40aa-b351-a945319821e2"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassB1B09E1A8CF647DC923C06327BF25C0A"><div>Gestione monitor vidimazioni cartacee Libro Unico del Lavoro e processo di generazione del registro elettronico</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniRe.doc"><font>Manuale UniRe</font></a></div>
+<div><div>(Estratto dal manuale del Libro Unico del Lavoro)</div>
+</div></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=714&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Unire</div><div class="descri">Unire (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="714"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="714"></div></div></div></div></div><div class="tabcontent tab_3_"><div class="container"><!--Livello: Ufficio (3_), Sezione: Applicazioni (1_)--><div class="cheader"><div class="htitle">Applicazioni<em>
+            (21)
+          </em></div></div><div class="ctag"><img src="app/css/sp/t.gif" class="uff24nov"></div><div class="taskcontainer"><div class="task ufficio" ambiente="" applid="28ce808e-354b-4182-a493-e845d0badb49"><div class="icon"><img src="app/css/sp/envelope_open.png"></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=772&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Modello 770</div><div class="descri">Paghe - Modello 770 (27)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="772"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="noattachment" itemId="772"></div></div><div class="task ufficio" ambiente="PROD" applid="74447daa-1789-4f74-85ba-ecacc27dcaa9"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass0736AD9F1E1B45638B9BF6EE9FD05B99"><div>Applicativo windows per la completa gestione del personale.</div>
+<div> </div>
+<div><div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale_PwClient.doc"><font>Manuale PWClient</font></a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20Operativo_pwclient.doc"><font>Manuale operativo PWClient</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=761&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">PWClient</div><div class="descri">PWClient (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="761"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="761"></div></div><div class="task ufficio" ambiente="ALFA" applid="74447daa-1789-4f74-85ba-ecacc27dcaa9"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass49A05DFF4ACA47E9A58E30F726B7694E"><p>​Applicativo windows per la completa gestione del personale.</p>
+<div class="ExternalClass07D4831BBAE04F2BB91047E666A40A0E"><div> </div>
+<div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale_PwClient.doc"><font>Manuale PWClient</font></a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20Operativo_pwclient.doc"><font>Manuale operativo PWClient</font></a></div>
+<div> </div></div>
+<p> </p></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=767&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">PWClient</div><div class="descri">PWClient (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="767"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="767"></div></div><div class="task ufficio" ambiente="PROD" applid="78562f9b-ae94-491e-bc59-866531a39a75"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass6672944F08254E76B1BE32D4ACBDBD53"><div>Gestione di tutti gli adempimenti per colf e badanti (predisposizione mensile di un prospetto paga, versamento trimestrale dei contributi, certificazione dei compensi erogati)</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Colf_Logiche%20di%20calcolo%20ed%20algoritmi.doc">Manuale Colf&amp;Badanti</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=680&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Colf Web</div><div class="descri">​Colf Web (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="680"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="680"></div></div><div class="task ufficio" ambiente="ALFA" applid="78562f9b-ae94-491e-bc59-866531a39a75"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassB689F0B992454815957659E9D06BF2D4"><div>Gestione di tutti gli adempimenti per colf e badanti (predisposizione mensile di un prospetto paga, versamento trimestrale dei contributi, certificazione dei compensi erogati) </div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Colf_Logiche%20di%20calcolo%20ed%20algoritmi.doc">Manuale Colf&amp;Badanti</a></div>
+<div> </div>
+<div> </div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=703&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Colf Web</div><div class="descri">Colf Web (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="703"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="703"></div></div><div class="task ufficio" ambiente="PROD" applid=""><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass7AB4E5A50DC14250AE211DA736C9898E"><div>Applicativo per determinare in modo personalizzato il costo aziendale di un dipendente. L'elaborazione accede ai dati statistici e alle tabelle gestite dal servizio Paghe  (contratti, qualifiche, tariffe, contribuzione)</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale_CASPER.doc">Manuale Casper</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=683&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Casper</div><div class="descri">Casper​ (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="683"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="683"></div></div><div class="task ufficio" ambiente="PROD" applid="ad185157-4a14-4c5a-b8ea-68960b6f2428"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassC61E8E8ED8B341E28F75702BF12F3B19"><div>Gestione e predisposizione domanda telematica per fruizione sgravio L. 247/2007.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Gestione%20sgravio%20l247_07%20anno%20rif.%202009.doc">Manuale DecoWeb</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=699&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Decoweb</div><div class="descri">​Decoweb (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="699"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="699"></div></div><div class="task ufficio" ambiente="PROD" applid="52501a29-1a1c-4a6f-b2d7-4133722f018f"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass8D61D480F2DA481480B78B739E47A90C"><div>Gestione  denunce d’infortunio soci e titolari d'azienda con invio file telematico all'Inail. </div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20denuncia%20infortunio%20indipendenti.doc">Manuale Denuncia infortunio indipendenti</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=694&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Denuncia infortunio indipendenti</div><div class="descri">​Denuncia infortunio indipendenti (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="694"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="694"></div></div><div class="task ufficio" ambiente="PROD" applid="fb8075f5-c120-4bc6-97fc-bb08436e1ead"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass53B92253507D440BA597A8C05554C21B"><div>Predisposizione e spedizione file telematici per casse edili.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Edilnet.doc">Manuale EdilNet</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=692&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">EdilNet</div><div class="descri">​EdilNet (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="692"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="692"></div></div><div class="task ufficio" ambiente="ALFA" applid="fb8075f5-c120-4bc6-97fc-bb08436e1ead"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass7741B573B27341B09A444129172482E7"><div>Predisposizione e spedizione file telematici per casse edili.</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Edilnet.doc"><font>Manuale EdilNet</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=729&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">EdilNet</div><div class="descri">EdilNet (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="729"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="729"></div></div><div class="task ufficio" ambiente="ALFA" applid="35e07674-2687-40a8-b9ab-93436ef6dbc3"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass2EE81B27B0F745A69648640F29C616DF"><div>Gestione rendicontazione completa fondi pensione e predisposizione file telematici.</div>
+<div> </div>
+<div><div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Fondi%20Web.doc"><font>Manuale FondiWeb</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=721&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">FondiWeb</div><div class="descri">FondiWeb (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="721"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="721"></div></div><div class="task ufficio" ambiente="PROD" applid="35e07674-2687-40a8-b9ab-93436ef6dbc3"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass781CC565E72F469E912A320478FF16B3"><div>Gestione rendicontazione completa fondi pensione e predisposizione file telematici.</div>
+<div> </div>
+<div><div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Fondi%20Web.doc"><font>Manuale FondiWeb</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=724&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">FondiWeb</div><div class="descri">FondiWeb (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="724"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="724"></div></div><div class="task ufficio" ambiente="PROD" applid="21b96690-5c5c-4078-a806-019352770143"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass29F53212B47D43DAB9FECC8E2A7FC040"><div>Controllo  in tempo reale avanzamento  stato elaborativo paghe nei vari uffici.</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Monitor%20Elaborazioni.doc">Manuale Monitor Elaborazioni</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=751&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Monitor Elaborazioni</div><div class="descri">Monitor Elaborazioni (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="751"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="751"></div></div><div class="task ufficio" ambiente="ALFA" applid="037f8ddb-19d3-486b-8a7b-8646bd26f8bf"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass62FC33B5686F4A669A94C478E95FA0D4"><div>Soluzione web rivolta direttamente alle imprese che intendono gestire con semplicità ed in modo guidato tutti gli adempimenti connessi alla gestione del personale.</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=746&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Paghe9</div><div class="descri">Paghe9 (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="746"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="746"></div></div><div class="task ufficio" ambiente="PROD" applid="037f8ddb-19d3-486b-8a7b-8646bd26f8bf"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassEA71998AC2B94767AEBA312833D9C3AB"><div>Soluzione web rivolta direttamente alle imprese che intendono gestire con semplicità ed in modo guidato tutti gli adempimenti connessi alla gestione del personale.</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20paghe9.doc"><font>Manuale Paghe9</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=748&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Paghe9</div><div class="descri">Paghe9 (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="748"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="748"></div></div><div class="task ufficio" ambiente="PROD" applid="8c0586f5-4a69-48c1-8265-10d0c5312ea8"><div class="icon"><img src="app/css/sp/envelope_open.png"></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=766&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Report</div><div class="descri">Report</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="766"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="noattachment" itemId="766"></div></div><div class="task ufficio" ambiente="PROD" applid=""><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassD7906F7275E54854B39CADB9D5EABDF2"><div>Software per la gestione delle presenze dei dipendenti. E' possibile gestire note aziendali con scadenziari, stampe a consuntivo dei fogli presenze e stampe riepilogative aziendali</div>
+<div> </div>
+<div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20Spirit.doc">Manuale Spirit</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=686&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Spirit</div><div class="descri">​Spirit (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="686"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="686"></div></div><div class="task ufficio" ambiente="PROD" applid="28ae0911-4b21-4ade-964a-f84a7d8e6ed4"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassC0C42E9554F043F384FABC808F9710BC"><div>Stampe di supporto e prospetti informativi per gli adempimenti richiesti in materia di lavoro.</div>
+<div> </div>
+<div>Link al manuale:<br /><a href="/know/paghe/Manuali/Manuale%20Stampe%20Multiaziendali.doc">Manuale Stampe Multiaziendali</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=757&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Stampe Multiaziendali</div><div class="descri">Stampe Multiaziendali (PROD)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="757"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="757"></div></div><div class="task ufficio" ambiente="PROD" applid="6fee2085-f674-4c5a-9667-24d02250f03e"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass384EFFFFBF9D4A709DBA22E250DC9733"><div>Generazione  flusso telematico Uniemens e DMag.</div>
+<div> </div>
+<div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniEmens.doc">Manuale UniEmens</a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20gestione%20agricoltura.doc">Manuale gestione agricoltura</a></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=696&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Uniemens/DMAG</div><div class="descri">Uniemens/DMAG​ (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="696"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="696"></div></div><div class="task ufficio" ambiente="ALFA" applid="6fee2085-f674-4c5a-9667-24d02250f03e"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClass5E48181EB80A4B82B3E96AF107073292"><div>Generazione  flusso telematico Uniemens e DMag.</div>
+<div> </div>
+<div><div>Link ai manuali:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniEmens.doc"><font>Manuale UniEmens</font></a></div>
+<div><a href="/know/paghe/Manuali/Manuale%20gestione%20agricoltura.doc"><font>Manuale gestione agricoltura</font></a></div>
+</div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=736&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Uniemens/DMAG</div><div class="descri">Uniemens/DMAG (ALFA)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="736"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="736"></div></div><div class="task ufficio" ambiente="PROD" applid="3d2a5591-dcc4-40aa-b351-a945319821e2"><div class="icon"><img src="app/css/sp/envelope_open.png"><div class="attachcontent"><div class="ExternalClassFB754C14089A49B2A503979625ED8BAF"><div>Gestione monitor vidimazioni cartacee Libro Unico del Lavoro e processo di generazione del registro elettronico</div>
+<div> </div>
+<div><div>Link al manuale:</div>
+<div><a href="/know/paghe/Manuali/Manuale%20UniRe.doc"><font>Manuale UniRe</font></a></div>
+<div><div>(Estratto dal manuale del Libro Unico del Lavoro)</div>
+</div></div></div></div></div><a class="lancio" target="_blank" href="/serv/sade/_layouts/CiUserContext/PaginaLancio.aspx?listId=4F9CD9F5-717F-4E33-AE0E-514BB6DA99DC&amp;id=689&amp;caller=/serv/sade/SitePages/Servizi%20Paghe.aspx"><div class="title">Unire</div><div class="descri">​Unire (Ufficio)</div></a><div class="add"><img src="app/css/sp/star.png" class="preferiti" title="Aggiungi ai preferiti" itemId="689"></div><div class="attach"><img src="app/css/sp/attachment.png" title="Look at documents" class="attachment" itemId="689"></div></div></div></div></div></div><div id="applinfo" class="vers2"><div class="infoheader"></div><div class="infocont"></div></div></div><div id="ECBItems_{4f9cd9f5-717f-4e33-ae0e-514bb6da99dc}" style="display:none" height="0" width="0"><div><div>Dettagli conformità</div><div></div><div>javascript:commonShowModalDialog(&#39;{SiteUrl}&#39;+ 
+            &#39;/_layouts/15/itemexpiration.aspx&#39; 
+            +&#39;?ID={ItemId}&amp;List={ListId}&#39;, &#39;center:1;dialogHeight:500px;dialogWidth:500px;resizable:yes;status:no;location:no;menubar:no;help:no&#39;, function GotoPageAfterClose(pageid){if(pageid == &#39;hold&#39;) {STSNavigate(unescape(decodeURI(&#39;{SiteUrl}&#39;))+ 
+            &#39;/_layouts/15/hold.aspx&#39; 
+            +&#39;?ID={ItemId}&amp;List={ListId}&#39;);  return false;} if(pageid == &#39;audit&#39;) {STSNavigate(unescape(decodeURI(&#39;{SiteUrl}&#39;))+
+            &#39;/_layouts/15/Reporting.aspx&#39;
+            +&#39;?Category=Auditing&amp;backtype=item&amp;ID={ItemId}&amp;List={ListId}&#39;); return false;} if(pageid == &#39;config&#39;) {STSNavigate(unescape(decodeURI(&#39;{SiteUrl}&#39;))+
+            &#39;/_layouts/15/expirationconfig.aspx&#39;
+            +&#39;?ID={ItemId}&amp;List={ListId}&#39;); return false;}}, null);</div><div>0x0</div><div>0x1</div><div>ContentType</div><div>0x01</div><div>898</div><div></div></div><div><div>Cronologia versioni set di documenti</div><div>/_layouts/15/images/versions.gif?rev=23</div><div>javascript:SP.UI.ModalDialog.ShowPopupDialog(&#39;{SiteUrl}&#39;+ 
+                &#39;/_layouts/15/DocSetVersions.aspx&#39;
+                + &#39;?List={ListId}&amp;ID={ItemId}&#39;)</div><div>0x0</div><div>0x0</div><div>ContentType</div><div>0x0120D520</div><div>330</div><div></div></div><div><div>Invia ad altra posizione</div><div>/_layouts/15/images/sendOtherLoc.gif?rev=23</div><div>javascript:GoToPage(&#39;{SiteUrl}&#39; +
+                &#39;/_layouts/15/docsetsend.aspx&#39; 
+                + &#39;?List={ListId}&amp;ID={ItemId}&#39;)</div><div>0x0</div><div>0x0</div><div>ContentType</div><div>0x0120D520</div><div>350</div><div></div></div></div><div class="ms-clear"></div></div>
+</div>
+		</div></div><div style="display&#58;none;" id="vid_d66b358b-5dd3-4d23-bc9a-06ceef466592"></div></div>
+
+
+<div class="ms-rtestate-read ms-rte-wpbox"><div class="ms-rtestate-notify  ms-rtestate-read ec7b56ba-1efa-42b4-9b4e-d8a2889df080" id="div_ec7b56ba-1efa-42b4-9b4e-d8a2889df080"></div>
+<div id="vid_ec7b56ba-1efa-42b4-9b4e-d8a2889df080" style="display&#58;none;"></div></div></div></div></td></tr></tbody></table>
+<span id="layoutsData" style="display&#58;none;">false,false,1</span></div></div>
+	</div>
+	<menu id="MSOMenu_WebPartMenu" class="ms-hide">
+		<ie:menuitem title="Comprime la web part." id="MSOMenu_Minimize" onmenuclick="javascript:MSOLayout_MinimizeRestoreDownLevel(MenuWebPartID, &#39;Minimized&#39;,20)" text="Riduci a icona" type="option">
+
+		</ie:menuitem><ie:menuitem title="Espande la web part." id="MSOMenu_Restore" onmenuclick="javascript:MSOLayout_MinimizeRestoreDownLevel(MenuWebPartID, &#39;Normal&#39;,21)" text="Ripristina" type="option">
+
+		</ie:menuitem><ie:menuitem title="Chiude la Web part. È possibile trovarla nella sezione relativa alle Web part chiuse nella barra multifunzione Inserisci. Le modifiche saranno valide per tutti gli utenti." id="MSOMenu_Close" onmenuclick="javascript:MSOLayout_RemoveWebPartDownLevel(MenuWebPartID, true)" text="Chiudi" type="option">
+
+		</ie:menuitem><ie:menuitem title="Elimina la Web part dalla pagina. Le modifiche saranno valide per tutti gli utenti." id="MSOMenu_Delete" iconsrc="/_layouts/15/images/DelItem.gif" onmenuclick="if(confirm(&#39;La web part verr\u00E0 eliminata in modo definitivo. Continuare?&#39;)) {MSOWebPartPage_partDeleted = MenuWebPartID;MSOWebPartPage_MenuDoPostBack(&#39;ctl00$ctl42&#39;, MenuWebPartID + &#39;;MSOMenu_Delete&#39;);}" text="Elimina" type="option">
+
+		</ie:menuitem><ie:menuitem type="separator"></ie:menuitem><ie:menuitem title="Modifica le proprietà della web part condivisa. Le modifiche saranno valide per tutti gli utenti." id="MSOMenu_Edit" iconsrc="/_layouts/15/images/EditItem.gif" onmenuclick="javascript:MSOTlPn_ShowToolPane2Wrapper(&#39;Edit&#39;, 16, MenuWebPartID)" text="Modifica web part" type="option">
+
+		</ie:menuitem><ie:menuitem type="separator"></ie:menuitem><ie:menuitem title="Esporta la Web part. Le modifiche saranno valide per tutti gli utenti." id="MSOMenu_Export" onmenuclick="javascript:MSOWebPartPage_ExportCheckWarning(&#39;\u002fserv\u002fsade\u002f_vti_bin\u002fexportwp.aspx?pageurl=http\u00253A\u00252F\u00252Fspsrv2013\u00253A80\u00252Fserv\u00252Fsade\u00252FSitePages\u00252FServizi\u00252520Paghe\u00252Easpx\u0026guidstring=&#39;+ escape(MenuWebPartID), MenuWebPart.getAttribute(&#39;HasPers&#39;) == &#39;true&#39;)" text="Esporta..." type="option">
+
+		</ie:menuitem><ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Guida" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu>
+<div style='display:none' id='hidZone'><div class="ms-webpart-zone ms-fullWidth">
+		<div id="MSOZoneCell_WebPartWPQ2" WebPartWPQ2_RelatedListId="{4f9cd9f5-717f-4e33-ae0e-514bb6da99dc}" WebPartWPQ2_WebPartStorageKey="bc721aaf-92fe-4408-9ff1-04f4e48a4121" class="s4-wpcell ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth " onkeyup="WpKeyUp(event)" onmouseup="WpClick(event)">
+
+		</div>
+	</div></div>
+                        
+</div>
+                    </div>
+                    <div id="DeltaFormDigest">
+	
+                    
+                    
+                    
+                    
+</div>
+                    <div class="ms-hide">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Custom Web Part Contesto Utente -->
+        <div id="ci-user-context-container" class="s4-notdlg">
+            
+            
+            <div id="ctl00_g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c" __MarkupType="vsattributemarkup" __WebPartId="{d4f1e00c-73a7-4f7e-92a9-93dcff51979c}" WebPart="true" IsClosed="false">
+	
+
+<style type="text/css">
+    .ddlprovhidden 
+    {
+        position: fixed;
+        top: -1000px;
+        left: -1000px;       
+    }
+    .ddlprovshow 
+    {
+        padding: 0 3px 0 0;
+        border: none;
+        font-family: Verdana, Arial, sans-serif;
+        font-size: 12pt;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        color: #0072bc;
+        position: relative;
+        margin-top: 6px;
+        margin-bottom: -10px;
+    }
+</style>
+
+<select name="ctl00$g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c$ctl00$ddlProvince" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c$ctl00$ddlProvince\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c_ctl00_ddlProvince" class="ddlprovhidden">
+		<option selected="selected" value="49">49 - Rimini</option>
+
+	</select>
+
+<div id="ci-user-context-id">
+</div>
+
+
+<div id="alertPopup" style="display: none; cursor: default; padding: 10px;">
+    <div class="message" style="margin: 0px 0px 10px 0px;"></div>
+    <input type="button" id="alertCancel" value="Annulla" accesskey ="_"/>
+</div>
+
+<script src="/_layouts/15/CiUserContext/jquery.tmpl.js" type="text/javascript"></script>
+<script src="/_layouts/15/CiUserContext/jquery.blockUI.js" type="text/javascript"></script> 
+
+
+<script type="text/javascript">
+   (function ($){
+     $(function() {
+     	// Gestione tabs
+     	var tabcontainier = $('ul.tabcontainer');
+     	$('ul.tabcontainer li').click(function(){
+     		var me = $(this);
+     		var tc = me.attr('tabclass');
+     		$('ul.tabcontainer li').removeClass('selected');
+     		me.addClass('selected');
+     		$('div.tabcontent').removeClass('selected');
+     		$('div.' + tc).addClass('selected');
+     	});
+
+    });
+    })(jQuery);
+</script>
+
+<script id="contestoTemplate" type="text/x-jquery-tmpl">
+    <div id="ci-user-context-provincia">
+        <span id="ctl00_g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c_ctl00_LabelProvincia">${Descrizione}</span>
+    </div>
+    <div id="ci-user-context-ambiente">
+        <span id="ctl00_g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c_ctl00_LabelAmbiente">Ambiente</span>
+        <select id='slAmbi'>
+        {{each(index, item) comboAmbi}}
+            <option {{if item.value == "PROD"}}selected='selected'{{/if}} value='${item.value}'>${item.text}</ option>
+        {{/each}}
+        </select>
+    </div>
+    <div id="ci-user-context-ufficio">
+        <span id="ctl00_g_d4f1e00c_73a7_4f7e_92a9_93dcff51979c_ctl00_LabelUfficio" ClientId="labelUfficio">Ufficio</span>
+        <select id="slUfficio"></select>
+    </div>
+
+</script>
+
+
+
+<script id="ufficiTemplate" type="text/x-jquery-tmpl">
+    <option value='${e}'>${d}</option>
+</script>
+
+</div>
+            
+        </div>
+        <!-- Custom Web Part Contesto Utente -->
+        <script type="text/javascript">// <![CDATA[ 
+
+
+        var g_Workspace = "s4-workspace";
+        // ]]>
+</script>
+    
+
+</form><span id="DeltaPlaceHolderUtilityContent"></span>
+        
+    </body>
+</html>

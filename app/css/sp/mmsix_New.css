@@ -1,0 +1,211 @@
+@media all and (max-width: 1200px) {
+	div.s4-pagedescription {
+		width: 600px;
+	}
+}
+
+a.MM_disable {
+	cursor: default;
+	color: #848284 !important;
+}
+
+#MMContainer {
+    width: 650px;
+    float: left;
+    height: 35px;
+    margin-top: 30px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    font-size: 16px;
+}
+
+#menu {
+
+    list-style:none;
+    position: relative;
+}
+
+#menu *
+{
+    list-style-position: inside;
+	list-style-type: none;
+}
+#menu > ul {
+	margin:0px;
+}
+
+#menu > ul > li {
+    float: left;
+    display: block;
+    text-align: center;
+    position: relative;
+    padding: 5px 20px 6px 20px;
+    margin: 0px 1px 0px 1px;
+    z-index: 100;
+    vertical-align: bottom;
+}
+
+li.MM_selected {
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.47);
+}
+
+li.MM_selected > a{
+	color: black !important;
+}
+
+div.mm-l1 {
+    background-color: #0072c6;
+    padding: 1px 10px;
+    margin: 0px -10px;
+}
+
+div.mm-l1 > a {
+    color: white !important;
+}
+
+/*
+div.mm-l0[data-title=Cooperazione] {
+}
+*/
+
+div.mm-l0[data-title=Cooperazione] + ul > li > div.mm-l1 {
+    background-color: white;
+}
+
+div.mm-l0[data-title=Cooperazione] + ul > li > div.mm-l1 > a {
+    color: #21344a !important;
+}
+
+/*
+#menu > ul > li > a 
+{
+    color: White;
+    font-size: 11px;
+    font-family: Arial;
+    font-weight: bold;
+}
+*/
+
+#menu > ul > li:hover > a
+{
+    color: #0072c6;
+}
+/*
+#menu > ul > li > ul a
+{
+    color: #666666;
+}
+*/
+/*
+#menu > ul > li:hover > a,
+#menu > ul > li:hover > a:visited,
+#menu > ul > li > ul a
+{
+    color: #21344A;
+}
+*/
+
+#menu > ul > li > ul a:hover
+{
+    /*color: #0000ff; */
+    color: #0072c6;
+}
+
+#menu > ul > li:hover {
+    padding: 5px 20px 8px 20px;
+    z-index: 100;
+}
+
+#menu > ul > li.MM_single:hover {
+    padding: 5px 20px 6px 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #21344a;
+}
+
+li.MM_header 
+{
+    display: inline;
+    position: relative;
+}
+
+li.MM_header > div > a,
+li.MM_header > a
+{
+    text-transform: uppercase;
+}
+li.MM_header > ul 
+{
+/*    background-color: #f4f4f4;
+        z-index: 500;
+    border-bottom: solid 1px #888;
+    border-left: solid 1px #888;
+    border-right: solid 1px #888;
+    border-radius: 0px 0px 5px 5px;
+*/
+    display: none;
+    background-color: white;
+    z-index: 50;
+    margin: 0px;
+    position: absolute;
+    top: 34px;
+    left: -1px;
+    padding: 0px;
+    width: 600px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    border: 1px solid #d1d1d1;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.47);
+}
+li.MM_header > ul:hover {
+    display: block;
+}
+li.MM_header:hover > ul {
+    display: block;
+}
+li.MM_header > ul > li {
+    display: block;
+    float: left;
+/*    border: solid 1px #F4F4F4; */
+    /* border: solid 1px lime; */
+    padding: 10px;
+    width: 150px;
+    margin: 0px 0px 0px 10px;
+/*    
+    font-size: 13px;
+    font-family: Arial;
+    font-weight: bold;
+*/
+    text-align: left;
+}
+
+li.MM_header > ul > li > ul {
+    margin: 0px 0px 0px 10px;
+    padding: 0px;
+}
+
+li.MM_header > ul > li > ul > li 
+{
+    text-align: left;
+/*
+    font-size: 12px;
+    font-family: Verdana;
+*/
+    font-size: 13px;
+    font-weight: normal;
+    list-style: none;
+}
+img.MM_limg
+{
+    position: absolute;
+/*	margin: 1px 0px 0px -15px;
+	width: 16px;
+	height: 13px;
+*/
+    margin: 4px 0px 0px -10px;
+}

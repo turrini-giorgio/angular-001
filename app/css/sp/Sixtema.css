@@ -1,0 +1,67 @@
+#SearchBox {
+    margin-top: 65px;
+    margin-right: 8px;
+}
+#ci-user-context-container {
+    height: 86px;
+    right: 27px;
+    position: absolute;
+    top: 60px;
+    width: 220px;
+}
+div#ci-user-context-id {
+    font-size: small;
+    height: 100%;
+    position: absolute;
+    font-weight: normal;
+    color: #0072c6;
+    width: 100%;
+}
+div#ci-user-context-id div {
+    height: 23px;
+    margin: 2px;
+}
+div#ci-user-context-provincia {
+    font-size: 15pt;
+    font-weight: bold;
+    color: #0072c6;
+    text-align: center;
+}
+div#ci-user-context-id div span {
+    position: relative;
+    top: 4px;
+}
+div#ci-user-context-ambiente {
+    position: relative;
+    top: 8px;
+}
+div#ci-user-context-id div select {
+    font-size: small;
+    border-top: #aaa 1px solid;
+    border-right: #aaa 1px solid;
+    border-bottom: #aaa 1px solid;
+    float: right;
+    color: #0072c6;
+    margin: 1px 0px 0px 4px;
+    border-left: #aaa 1px solid;
+    width: 136px;
+}
+#slAmbi {
+    height: 22px;
+    width: 136px;
+}
+div#ci-user-context-ufficio {
+    position: relative;
+    top: 8px;
+}
+#slUfficio {
+    height: 22px;
+    width: 136px;
+}
+.ms-core-pageTitle {
+    font-size: 1.4em;
+    margin-top:24px;
+}
+body.ms-fullscreenmode #ci-user-context-container {
+    display: none;
+}

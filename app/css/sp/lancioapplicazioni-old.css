@@ -1,0 +1,420 @@
+*
+{
+    border: 0;
+    margin: 0;
+}
+#applcontainer
+{
+    position: relative;
+    width: 1050px;
+}
+
+#applicazioni
+{
+    position: relative;
+    font-family: "Open Sans", "Segoe UI", "Trebuchet MS", sans-serif;
+    width: 775px;
+    float: left;
+}
+#applinfo
+{
+    position: relative;
+    width: 275px;
+    float: left;
+    display: none;
+}
+div.vers2
+{
+    margin-top: 29px;
+}
+div.attachcontent 
+{
+    display: none;
+}
+div.task {
+    position: relative;
+    margin: 2px;
+    width: 684px;
+    min-height: 60px;
+    background-color: #fff;
+}
+div.task img {
+    margin-top: 6px;
+    border: none;
+}
+div.sixtema {
+    background-color: #ffc;
+}
+div.ufficio {
+    background-color: #eef;
+}
+div.provincia {
+    background-color: #fef;
+}
+div.sixtema:hover,
+div.ufficio:hover,
+div.provincia:hover {
+    background-color: #CCEBFF;
+}
+/*div.icon:hover,*/
+/*div.attach img.attachment,*/
+div.add img.preferiti:hover
+{
+    cursor: pointer;
+}
+div.task a, 
+div.task a:link, 
+div.task a:visited
+{
+    text-decoration: none;
+    color: black;
+}
+div.task div.icon {
+    position: relative;
+    /*width: 90%;*/
+}
+div.iconselected 
+{
+    background-color: #C5D5FA;
+}
+div.task div.title {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #0072c6;
+}
+/*
+div.task div.title {
+    position: absolute;
+    left: 70px;
+    top: 5px;
+    font-size: 13px;
+    text-decoration: underline;
+    color: blue;
+}
+*/  
+div.task div.descri {
+    position: absolute;
+    top: 26px;
+    left: 70px;
+    max-width: 70%;
+    /*right: 30%;*/
+    font-size: 12px;
+}
+div.task div.context {
+    position: absolute;
+    left: 70%;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    padding: 0px 2px 0px 2px;
+    text-align: right;
+    font-size: 11px;
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: 400;
+}
+div.task div.add {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    margin-top: -21px;
+}
+div.task div.attach {
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    margin-top: -18px;
+}
+div.task div.lastrun {
+    position: absolute;
+    left: 70%;
+    right: 2px;
+    bottom: 2px;
+    font-size: 11px;
+    text-align: right;
+    padding-right: 3px;
+    background-color: #e0e0e0;
+}
+div.task div.card {
+    position: absolute;
+    left: 70%;
+    right: 2px;
+    bottom: 22px;
+    font-size: 11px;
+    text-align: right;
+    padding-left: 3px;
+    background-color: #e0e0e0;
+}
+#applicazioni * {
+    box-sizing: content-box;
+}
+#applicazioni div.container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    min-height: 270px;
+    max-height: 540px;
+}
+div.closed {
+    height: 24px;
+    min-height: 24px;
+    max-height: 24px;
+}
+div.closed div.ctag,
+div.closed div.taskcontainer
+{
+    display: none;
+}
+div.ctag {
+    position: absolute;
+    /*top: 50%;
+    margin-top: -86px;
+    top: 30px;
+    left: 6px;
+    width: 58px;
+    min-height: 270px;
+    */
+    top: 28px;
+    left: 32px;
+    width: 34px;
+    min-height: 150px;
+}
+div.infoheader {
+    position: relative;
+    background-color: #CCEBFF;
+    color: #21374C;
+    font-weight: 400;
+    font-size: 13px;
+    padding-top: 2px;
+    height: 18px;
+    text-align: center;
+    border-bottom: solid 1px #94CFF7;
+    font-family: "Open Sans", "Segoe UI", "Trebuchet MS", sans-serif;
+}
+div.infocont 
+{
+    padding: 10px 0px 0px 5px;
+}
+div.infocont a,
+div.infocont a:visited
+{
+    text-decoration: underline;
+}
+div.cheader:hover {
+    background-color: #BBDAEE;
+}
+/*
+    div.cheader {
+    position: relative;
+    background-color: #CCEBFF;
+    color: #21374C;
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 64px;
+    padding-top: 2px;
+    height: 18px;
+    text-align: left;
+    width: 693px;
+    border-bottom: solid 1px #94CFF7;
+    font-family: "Open Sans", "Segoe UI", "Trebuchet MS", sans-serif;
+}
+*/
+div.cheader {
+    position: relative;
+    background-color: #109CFF;
+    color: white;
+    font-size: 14px;
+    padding-left: 64px;
+    padding-top: 2px;
+    height: 18px;
+    text-align: left;
+    width: 693px;
+    border-bottom: solid 1px #109CFF;
+    font-family: "Open Sans", "Segoe UI", "Trebuchet MS", sans-serif;
+}
+div.cheader div.htitle {
+    float: left;
+}
+
+div.htitle em {
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+div.cheader div.htype {
+    float: right;
+    padding-right: 16px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+div.taskcontainer {
+    position: relative;
+    left: 70px;
+	max-height: 500px;
+	width: 704px;
+	overflow: auto;
+}
+/* Preferiti popup v2*/
+#preferitiPopup {
+    display: none;
+    text-align: left;
+}
+
+#preferitiPopup input {
+    width: 220px;
+}
+
+#preferitiPopup label {
+    display: block;
+    float: left;
+    width: 382px;
+    margin-left: 4px;
+    color: #444;	
+}
+#preferitiPopup h1 {
+    font-size: 1.4em;
+    text-align: center;
+    color: #444;
+}
+
+div.blockPage {
+    width: 630px !important;
+    height: 233px !important;
+    border: 1px solid #c6c6c6 !important;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.47) !important;
+}
+
+div.blockOverlay {
+	background-color: #999 !important;
+	opacity: 0.4 !important
+}
+
+/* Preferiti popup */
+/*
+#preferitiPopup 
+{
+    display: none;
+    background-color: #e0e0ff;
+    width: 323px;
+    height: 200px;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    text-align: left;
+}
+#preferitiPopup input
+{
+    background-color: #e0e0ff;
+    width: 220px;
+}
+    #preferitiPopup label
+{
+    display: block;
+    float: left;
+    width: 80px;
+    margin-left: 4px;
+}
+#preferitiPopup h1
+{
+    font-size: 18pt;
+    font-weight: 100;
+    text-align: center;
+}
+*/
+
+#preferitiPopup textarea
+{
+    width: 220px;
+}
+#preferitiPopup input.ok,
+#preferitiPopup input.cancel
+{
+    width: 70px;
+    cursor: pointer;
+}
+#preferitiPopup *
+{
+    cursor: default;
+}
+#prefLevel 
+{
+    font-family: "Open Sans", "Segoe UI", "Trebuchet MS", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 100;
+}
+#prefFooter
+{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 5px 10px 5px 10px;
+}
+#prefFooter input.ok
+{
+    float: right;
+}
+#prefFooter input.cancel
+{
+    float: left;
+}
+div.tabcontent
+{
+    clear: both;
+    display: none;
+}
+div.selected
+{
+    display: block;
+}
+/*
+ul.tabcontainer li.selected
+{
+    background: url("/_layouts/images/selbg.png");
+    background-color: #CCEBFF;
+    border-top: solid 1px #91cdf2;
+    border-left: solid 1px #91cdf2;
+    border-right: solid 1px #91cdf2;
+    border-radius: 5px 5px 0px 0px;
+}
+*/
+ul.tabcontainer li.selected {
+    background-color: #109CFF;
+    border-top: solid 1px #109CFF;
+    border-left: solid 1px #109CFF;
+    border-right: solid 1px #109CFF;
+    color: white;
+}
+/*
+ul.tabcontainer li
+{
+    list-style: none;
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px 5px 20px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    color: Black;
+    border-top: solid 1px #E1EAEF;
+    border-left: solid 1px #E1EAEF;
+    border-right: solid 1px #E1EAEF;
+    border-radius: 5px 5px 0px 0px;
+}
+    */
+ul.tabcontainer li {
+    list-style: none;
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px 5px 20px;
+    float: left;
+    margin: 5px 0px 0px 0px;
+    color: black;
+    border-top: solid 1px #E1EAEF;
+    border-left: solid 1px #E1EAEF;
+    border-right: solid 1px #E1EAEF;
+}
